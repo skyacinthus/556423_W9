@@ -25,6 +25,11 @@ int main() {
     c = circumference(r);
     a = area(r);
 
+    if (r < 0){
+        cout << "THE POINT IS INVALID"<< endl;
+        return 0;
+    }
+
     cout << "RADIUS: " << r << endl;
     cout << "DIAMETER: " << d << endl;
     cout << "CIRCUMFERENCE: " << c << endl;
